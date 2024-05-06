@@ -180,17 +180,17 @@ def main():
     if connection is None:
         return
 
-    # # Read and insert guest data
-    # read_guest_data(connection)
+    # Read and insert guest data
+    read_guest_data(connection)
 
-    # # Read and insert reservation data
-    # read_reservation_data(connection)
+    # Read and insert reservation data
+    read_reservation_data(connection)
 
-    # # Read and insert room data
-    # read_room_data(connection)
+    # Read and insert room data
+    read_room_data(connection)
 
     # Commit changes and close connection
-    # connection.commit()
+    connection.commit()
 
     # Execute queries
     query_guests_by_state_and_age(connection)
